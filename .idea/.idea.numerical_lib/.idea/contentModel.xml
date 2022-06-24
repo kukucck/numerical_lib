@@ -18,6 +18,7 @@
       </e>
       <e p="numerical_lib" t="IncludeRecursive">
         <e p="Basic" t="Include">
+          <e p="Const.cs" t="Include" />
           <e p="Functions.cs" t="Include" />
           <e p="MatrixMN.cs" t="Include" />
           <e p="MatrixN.cs" t="Include" />
