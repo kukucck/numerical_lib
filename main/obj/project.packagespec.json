@@ -1,0 +1,41 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "F:\\workspaces\\numerical\\numerical_lib\\main\\main.csproj",
+    "projectName": "main",
+    "projectPath": "F:\\workspaces\\numerical\\numerical_lib\\main\\main.csproj",
+    "outputPath": "F:\\workspaces\\numerical\\numerical_lib\\main\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net472"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net472": {
+        "projectReferences": {
+          "F:\\workspaces\\numerical\\numerical_lib\\numerical_lib\\numerical_lib.csproj": {
+            "projectPath": "F:\\workspaces\\numerical\\numerical_lib\\numerical_lib\\numerical_lib.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "net472": {
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+    }
+  },
+  "runtimes": {
+    "win7-x86": {
+      "#import": []
+    }
+  }
+}

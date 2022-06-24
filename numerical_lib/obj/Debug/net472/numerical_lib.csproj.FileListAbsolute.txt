@@ -1,0 +1,9 @@
+F:\workspaces\numerical\numerical_lib\numerical_lib\bin\Debug\net472\numerical_lib.dll
+F:\workspaces\numerical\numerical_lib\numerical_lib\bin\Debug\net472\numerical_lib.pdb
+F:\workspaces\numerical\numerical_lib\numerical_lib\obj\Debug\net472\numerical_lib.csproj.AssemblyReference.cache
+F:\workspaces\numerical\numerical_lib\numerical_lib\obj\Debug\net472\numerical_lib.GeneratedMSBuildEditorConfig.editorconfig
+F:\workspaces\numerical\numerical_lib\numerical_lib\obj\Debug\net472\numerical_lib.AssemblyInfoInputs.cache
+F:\workspaces\numerical\numerical_lib\numerical_lib\obj\Debug\net472\numerical_lib.AssemblyInfo.cs
+F:\workspaces\numerical\numerical_lib\numerical_lib\obj\Debug\net472\numerical_lib.csproj.CoreCompileInputs.cache
+F:\workspaces\numerical\numerical_lib\numerical_lib\obj\Debug\net472\numerical_lib.dll
+F:\workspaces\numerical\numerical_lib\numerical_lib\obj\Debug\net472\numerical_lib.pdb

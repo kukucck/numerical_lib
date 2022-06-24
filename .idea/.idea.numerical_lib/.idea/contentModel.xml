@@ -4,9 +4,31 @@
     <e p="C:\Users\cck\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\cck\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_numerical_lib.1320322938.00" t="ExcludeRecursive" />
     <e p="F:\workspaces\numerical\numerical_lib" t="IncludeFlat">
+      <e p="main" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="main.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net472" t="Include">
+              <e p="main.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="numerical_lib" t="IncludeRecursive">
+        <e p="Basic" t="Include">
+          <e p="Functions.cs" t="Include" />
+          <e p="MatrixMN.cs" t="Include" />
+          <e p="MatrixN.cs" t="Include" />
+          <e p="VectorN.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Class1.cs" t="Include" />
+        <e p="LinearEquations" t="Include" />
+        <e p="NonlinearEquations" t="Include">
+          <e p="DichotomySolver.cs" t="Include" />
+        </e>
         <e p="numerical_lib.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

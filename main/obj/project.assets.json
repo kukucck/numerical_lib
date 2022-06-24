@@ -1,0 +1,90 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "numerical_lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/numerical_lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/numerical_lib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win7-x86": {
+      "numerical_lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/numerical_lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/numerical_lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "numerical_lib/1.0.0": {
+      "type": "project",
+      "path": "../numerical_lib/numerical_lib.csproj",
+      "msbuildProject": "../numerical_lib/numerical_lib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "numerical_lib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cck\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\workspaces\\numerical\\numerical_lib\\main\\main.csproj",
+      "projectName": "main",
+      "projectPath": "F:\\workspaces\\numerical\\numerical_lib\\main\\main.csproj",
+      "packagesPath": "C:\\Users\\cck\\.nuget\\packages\\",
+      "outputPath": "F:\\workspaces\\numerical\\numerical_lib\\main\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\cck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "F:\\workspaces\\numerical\\numerical_lib\\numerical_lib\\numerical_lib.csproj": {
+              "projectPath": "F:\\workspaces\\numerical\\numerical_lib\\numerical_lib\\numerical_lib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}

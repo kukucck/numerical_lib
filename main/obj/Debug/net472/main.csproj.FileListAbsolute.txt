@@ -1,0 +1,13 @@
+F:\workspaces\numerical\numerical_lib\main\bin\Debug\net472\main.exe.config
+F:\workspaces\numerical\numerical_lib\main\bin\Debug\net472\main.exe
+F:\workspaces\numerical\numerical_lib\main\bin\Debug\net472\main.pdb
+F:\workspaces\numerical\numerical_lib\main\bin\Debug\net472\numerical_lib.dll
+F:\workspaces\numerical\numerical_lib\main\bin\Debug\net472\numerical_lib.pdb
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.csproj.AssemblyReference.cache
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.GeneratedMSBuildEditorConfig.editorconfig
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.AssemblyInfoInputs.cache
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.AssemblyInfo.cs
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.csproj.CoreCompileInputs.cache
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.csproj.CopyComplete
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.exe
+F:\workspaces\numerical\numerical_lib\main\obj\Debug\net472\main.pdb
