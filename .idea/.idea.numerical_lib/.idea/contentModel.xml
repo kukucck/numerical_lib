@@ -28,7 +28,10 @@
         <e p="Class1.cs" t="Include" />
         <e p="LinearEquations" t="Include" />
         <e p="NonlinearEquations" t="Include">
-          <e p="DichotomySolver.cs" t="Include" />
+          <e p="DichotomyResolver.cs" t="Include" />
+          <e p="NewtonItarativeResolver.cs" t="Include" />
+          <e p="NormalIterativeResolver.cs" t="Include" />
+          <e p="SecantItarativeResolver.cs" t="Include" />
         </e>
         <e p="numerical_lib.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

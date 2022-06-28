@@ -6,17 +6,49 @@ class Program
 {
     static void Main(string[] args)
     {
+        
+        // TestSecantItar();
+        // TestNewtonItar();
+        // TestNormalItar();
         TestDichotomySolver();
+    }
+    
+    static void TestSecantItar()
+    {
+        Function fun = (float x) => { return x * x * x + 2 * x * x - 4; };
+        float value = SecantItarativeResolver.Solve(fun, 100, 120);
+        Console.WriteLine($"result = {value}");
+    }
+
+    static void TestNewtonItar()
+    {
+        Function fun = (float x) => { return x * x * x + 2 * x * x - 4; };
+        Function derivativeFun = (float x) => { return 3 * x * x + 4 * x;};
+
+        float value = NewtonItarativeResolver.Solve(fun, derivativeFun, 100);
+        Console.WriteLine($"result = {value}");
+    }
+
+    //测试不动点迭代法
+    static void TestNormalItar()
+    {
+        Function gFunc = (float x) =>
+        {
+            double result = 2 * Math.Pow(1 / (2 + x), 0.5f);
+            return (float) result;
+            
+        };
+        float value = NormalIterativeResolver.Solve(gFunc, 100f);
+        Console.WriteLine($"result = {value}");
     }
 
     //测试二分法
     static void TestDichotomySolver()
     {
-        Function f = x => x * x * x - 4;
-        DichotomySolver solver = new DichotomySolver(f, -1f, 300);
         try
         {
-            float result = solver.Solve();
+            Function f = x => x * x * x - 4;
+            float result = DichotomyResolver.Solve(f, -1f, 300);
             Console.WriteLine($"result = {result}");
         }
         finally

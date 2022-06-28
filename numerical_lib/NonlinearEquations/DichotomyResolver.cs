@@ -6,41 +6,28 @@ namespace numerical_lib.NonlinearEquations
     /// <summary>
     /// 二分法
     /// </summary>
-    public class DichotomySolver
+    public static class DichotomyResolver
     {
-        private Function _function;
-        private float _a;
-        private float _b;
-
-        public DichotomySolver(Function function, float a, float b)
+        public static float Solve(Function function, float a, float b)
         {
-            _function = function;
-            _a = a;
-            _b = b;
-        }
-
-        public float Solve()
-        {
-            if (_function(_a) * _function(_b) >= 0)
+            if (function(a) * function(b) >= 0)
             {
-                throw new Exception($"fun({_a}) 和 fun({_b})同号，不能用二分法");
+                throw new Exception($"fun({a}) 和 fun({b})同号，不能用二分法");
             }
-            float a = _a;
-            float b = _b;
             float x;
 
             int itarNum = 0;
             while (true)
             {
                 x = (a + b) / 2;
-                float value = _function(x);
+                float value = function(x);
                 Console.WriteLine($"fun({x}) = {value}");
                 if (Math.Abs(value) <= Const.ERROR)
                 {
                     Console.WriteLine($"二分法迭代次数：{itarNum}");
                     return x;
                 }
-                if (_function(x) * _function(a) < 0)
+                if (function(x) * function(a) < 0)
                 {
                     b = x;
                 }
@@ -49,7 +36,7 @@ namespace numerical_lib.NonlinearEquations
                     a = x;
                 }
                 itarNum++;
-                if (itarNum > 200)
+                if (itarNum > Const.MAX_ITAR_NUM)
                 {
                     throw new Exception("无解");
                 }
