@@ -29,6 +29,7 @@
         <e p="Class1.cs" t="Include" />
         <e p="Interpolation" t="Include">
           <e p="LagrangeInterpolation.cs" t="Include" />
+          <e p="NewtonInterpolation.cs" t="Include" />
         </e>
         <e p="NonlinearEquations" t="Include">
           <e p="DichotomyResolver.cs" t="Include" />

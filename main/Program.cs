@@ -9,16 +9,33 @@ class Program
     static void Main(string[] args)
     {
         TestLagrangeInterpolation();
+        TestNewtonInterpolation();
     }
     
     #region 插值测试用例
 
     static void TestLagrangeInterpolation()
     {
+        // Point[] points = new[] {new Point(-2, 3), new Point(-1, 1)};
         Point[] points = new[] {new Point(-2, 3), new Point(-1, 1), new Point(0, 1), new Point(1, 6)};
         LagrangeInterpolation lagrangeInterpolation = new LagrangeInterpolation(points);
         float value = lagrangeInterpolation.Evaluate(0.5f);
         Console.WriteLine($"result = {value}");
+    }
+    
+    static void TestNewtonInterpolation()
+    {
+        Point[] points = new[] {new Point(-2, 3), new Point(-1, 1)};
+        // Point[] points = new[] {new Point(-2, 3), new Point(-1, 1), new Point(0, 1), new Point(1, 6)};
+        NewtonInterpolation newtonInterpolation = new NewtonInterpolation(points);
+        float value = newtonInterpolation.Evaluate(0.5f); //先用两个点插值
+        Console.WriteLine($"result1 = {value}");
+        newtonInterpolation.AddPoint(new Point(0, 1));//添加第3个点
+        value = newtonInterpolation.Evaluate(0.5f);
+        Console.WriteLine($"result2 = {value}");
+        newtonInterpolation.AddPoint(new Point(1, 6));//添加第4个点
+        value = newtonInterpolation.Evaluate(0.5f);
+        Console.WriteLine($"result3 = {value}");
     }
 
     #endregion
