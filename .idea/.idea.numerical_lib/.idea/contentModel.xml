@@ -22,11 +22,14 @@
           <e p="Functions.cs" t="Include" />
           <e p="MatrixMN.cs" t="Include" />
           <e p="MatrixN.cs" t="Include" />
+          <e p="Point.cs" t="Include" />
           <e p="VectorN.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Class1.cs" t="Include" />
-        <e p="LinearEquations" t="Include" />
+        <e p="Interpolation" t="Include">
+          <e p="LagrangeInterpolation.cs" t="Include" />
+        </e>
         <e p="NonlinearEquations" t="Include">
           <e p="DichotomyResolver.cs" t="Include" />
           <e p="NewtonItarativeResolver.cs" t="Include" />

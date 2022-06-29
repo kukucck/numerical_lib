@@ -1,18 +1,30 @@
 ﻿using System;
 using numerical_lib.Basic;
+using numerical_lib.Interpolation;
 using numerical_lib.NonlinearEquations;
 
 class Program
 {
+    
     static void Main(string[] args)
     {
-        
-        // TestSecantItar();
-        // TestNewtonItar();
-        // TestNormalItar();
-        TestDichotomySolver();
+        TestLagrangeInterpolation();
     }
     
+    #region 插值测试用例
+
+    static void TestLagrangeInterpolation()
+    {
+        Point[] points = new[] {new Point(-2, 3), new Point(-1, 1), new Point(0, 1), new Point(1, 6)};
+        LagrangeInterpolation lagrangeInterpolation = new LagrangeInterpolation(points);
+        float value = lagrangeInterpolation.Evaluate(0.5f);
+        Console.WriteLine($"result = {value}");
+    }
+
+    #endregion
+
+    #region 非线性方程组测试用例
+
     static void TestSecantItar()
     {
         Function fun = (float x) => { return x * x * x + 2 * x * x - 4; };
@@ -57,6 +69,8 @@ class Program
         }
         
     }
+
+    #endregion
 
     static void TestMatrix()
     {
