@@ -28,9 +28,11 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Class1.cs" t="Include" />
         <e p="Interpolation" t="Include">
+          <e p="HermiteInterpolation.cs" t="Include" />
           <e p="LagrangeInterpolation.cs" t="Include" />
           <e p="NewtonInterpolation.cs" t="Include" />
         </e>
+        <e p="LinearEquations" t="Include" />
         <e p="NonlinearEquations" t="Include">
           <e p="DichotomyResolver.cs" t="Include" />
           <e p="NewtonItarativeResolver.cs" t="Include" />

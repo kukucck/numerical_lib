@@ -8,11 +8,21 @@ class Program
     
     static void Main(string[] args)
     {
-        TestLagrangeInterpolation();
-        TestNewtonInterpolation();
+        TestHermiteInterpolation();
+        // TestLagrangeInterpolation();
+        // TestNewtonInterpolation();
     }
     
     #region 插值测试用例
+    
+    static void TestHermiteInterpolation()
+    {
+        Point[] points = {new Point(1.3f, 0.6200860f), new Point(1.6f, 0.4554022f), new Point(1.9f, 0.2818186f)};
+        Point[] derivativePoints = {new Point(1.3f, -0.5220232f), new Point(1.6f, -0.5698959f), new Point(1.9f, -0.5811571f)};
+        HermiteInterpolation hermiteInterpolation = new HermiteInterpolation(points, derivativePoints);
+        float value = hermiteInterpolation.Evaluate(1.5f);
+        Console.WriteLine($"result = {value}");
+    }
 
     static void TestLagrangeInterpolation()
     {

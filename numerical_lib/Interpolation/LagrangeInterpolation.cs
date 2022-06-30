@@ -8,6 +8,9 @@ namespace numerical_lib.Interpolation
     public class LagrangeInterpolation
     {
         public Point[] points;
+        /// <summary>
+        /// 基函数的分母
+        /// </summary>
         public float[] lDenominators;
 
         public LagrangeInterpolation(Point[] points)
