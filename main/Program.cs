@@ -10,10 +10,27 @@ class Program
     
     static void Main(string[] args)
     {
-        TestTridiagonalResolver();
+        TestSplineInterpolation();
     }
     
     #region 插值测试用例
+
+    static void TestSplineInterpolation()
+    {
+        Point[] points = new[]
+        {
+            new Point(0, 0),
+            new Point(2, 16),
+            new Point(4, 36),
+            new Point(6, 54),
+            new Point(10, 82)
+        };
+        SplineInterpolation splineInterpolation = new SplineInterpolation(points, new Point(0,8), new Point(10,7));
+        float value = splineInterpolation.Evaluate(3f);
+        Console.WriteLine($"result1 = {value}");
+        value = splineInterpolation.Evaluate(8f);
+        Console.WriteLine($"result2 = {value}");
+    }
     
     static void TestHermiteInterpolation()
     {

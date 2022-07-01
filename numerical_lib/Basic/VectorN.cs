@@ -27,6 +27,28 @@
             items[i] = value;
         }
 
+        public static VectorN operator *(VectorN a, float b)
+        {
+            VectorN result = new VectorN(a.items);
+            int len = result.items.Length;
+            for (int i = 0; i < len; i++)
+            {
+                result.items[i] = result.items[i] * b;
+            }
+            return result;
+        }
+        
+        public static VectorN operator *(float b, VectorN a)
+        {
+            VectorN result = new VectorN(a.items);
+            int len = result.items.Length;
+            for (int i = 0; i < len; i++)
+            {
+                result.items[i] = result.items[i] * b;
+            }
+            return result;
+        }
+
         public override string ToString()
         {
             string s = "size:" + size + "\n";

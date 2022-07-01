@@ -31,6 +31,7 @@
           <e p="HermiteInterpolation.cs" t="Include" />
           <e p="LagrangeInterpolation.cs" t="Include" />
           <e p="NewtonInterpolation.cs" t="Include" />
+          <e p="SplineInterpolation.cs" t="Include" />
         </e>
         <e p="LinearEquations" t="Include">
           <e p="DirectMethod" t="Include">
