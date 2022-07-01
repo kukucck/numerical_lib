@@ -18,7 +18,14 @@ namespace numerical_lib.Basic
             this.dimension = (int) Math.Sqrt(items.Length);
             this.items = items;
         }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i">第几行</param>
+        /// <param name="j">第几列</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public float Get(int i, int j)
         {
             int index = i * dimension + j;
@@ -28,7 +35,14 @@ namespace numerical_lib.Basic
             }
             return items[index];
         }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i">第几行</param>
+        /// <param name="j">第几列</param>
+        /// <param name="value"></param>
+        /// <exception cref="Exception"></exception>
         public void Set(int i, int j, float value)
         {
             int index = i * dimension + j;

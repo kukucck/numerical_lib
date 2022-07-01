@@ -106,7 +106,7 @@ namespace numerical_lib.Interpolation
             }
 
             float result = molecule / denominator;
-            Console.WriteLine($"L[{i}]({x}) = {result}");
+            // Console.WriteLine($"L[{i}]({x}) = {result}");
             return result;
         }
         

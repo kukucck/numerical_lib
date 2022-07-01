@@ -22,6 +22,11 @@
             return items[i];
         }
 
+        public void Set(int i, float value)
+        {
+            items[i] = value;
+        }
+
         public override string ToString()
         {
             string s = "size:" + size + "\n";

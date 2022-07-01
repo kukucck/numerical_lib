@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Drawing.Drawing2D;
 using numerical_lib.Basic;
 using numerical_lib.Interpolation;
+using numerical_lib.LinearEquations.DirectMethod;
 using numerical_lib.NonlinearEquations;
 
 class Program
@@ -8,9 +10,7 @@ class Program
     
     static void Main(string[] args)
     {
-        TestHermiteInterpolation();
-        // TestLagrangeInterpolation();
-        // TestNewtonInterpolation();
+        TestTridiagonalResolver();
     }
     
     #region 插值测试用例
@@ -99,6 +99,24 @@ class Program
 
     #endregion
 
+    #region 线性方程组直接法
+
+    static void TestTridiagonalResolver()
+    {
+        MatrixN A = new MatrixN(new []
+        {
+            2f, -1f, 0,0,
+            -1f, 2f, -1f, 0,
+            0, -1f, 2f, -1f,
+            0,0, -1f, 2f
+        });
+        VectorN b = new VectorN(new []{1f,0,0, 1f});
+        TridiagonalResolver resolver = new TridiagonalResolver(A, b);
+        VectorN result = resolver.Solve();
+        Console.WriteLine(result);
+    }
+
+    #endregion
     static void TestMatrix()
     {
         MatrixN a = new MatrixN(new []{1f,2f,2f,1f,5f,0f,2f,3f,9f});

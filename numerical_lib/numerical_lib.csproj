@@ -4,8 +4,4 @@
         <TargetFramework>net472</TargetFramework>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="LinearEquations" />
-    </ItemGroup>
-
 </Project>
