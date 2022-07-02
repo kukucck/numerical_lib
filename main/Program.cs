@@ -10,7 +10,7 @@ class Program
     
     static void Main(string[] args)
     {
-        TestSplineInterpolation();
+        TestMatrixMN();
     }
     
     #region 插值测试用例
@@ -134,6 +134,9 @@ class Program
     }
 
     #endregion
+
+    #region 基础测试（矩阵等）
+
     static void TestMatrix()
     {
         MatrixN a = new MatrixN(new []{1f,2f,2f,1f,5f,0f,2f,3f,9f});
@@ -151,4 +154,25 @@ class Program
         Console.WriteLine(v);
         Console.WriteLine(a * v);
     }
+    
+    static void TestMatrixMN()
+    {
+        MatrixMN a = new MatrixMN(3,2,new []{1f,0f,3f,0f,2f,1f});
+        a.SwapCol(0,1);
+        MatrixMN b = new MatrixMN(2,3,new []{1f,0f,3f,0f,2f,1f});
+        
+        VectorN v = new VectorN(new []{0f, 1f, 2f});
+
+        MatrixMN c = a * b;
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+        Console.WriteLine(c);
+        
+        Console.WriteLine("-----------------------");
+        Console.WriteLine(a);
+        Console.WriteLine(v);
+        Console.WriteLine(a * v);
+    }
+
+    #endregion
 }

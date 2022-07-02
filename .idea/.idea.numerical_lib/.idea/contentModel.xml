@@ -35,6 +35,7 @@
         </e>
         <e p="LinearEquations" t="Include">
           <e p="DirectMethod" t="Include">
+            <e p="LUResolver.cs" t="Include" />
             <e p="TridiagonalResolver.cs" t="Include" />
           </e>
           <e p="ItaratorMethod" t="Include">

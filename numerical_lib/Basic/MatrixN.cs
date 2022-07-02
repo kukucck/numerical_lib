@@ -53,6 +53,38 @@ namespace numerical_lib.Basic
             items[index] = value;
         }
 
+        /// <summary>
+        /// 交换两行
+        /// </summary>
+        /// <param name="i1"></param>
+        /// <param name="i2"></param>
+        public void SwapRow(int i1, int i2)
+        {
+            for (int i = 0; i < dimension; i++)
+            {
+                float value = Get(i1, i);
+                Set(i1,i, Get(i2, i));
+                Set(i2, i, value);
+            }
+        }
+
+        /// <summary>
+        /// 交换两列
+        /// </summary>
+        /// <param name="j1"></param>
+        /// <param name="j2"></param>
+        public void SwapCol(int j1, int j2)
+        {
+            for (int i = 0; i < dimension; i++)
+            {
+                float value = Get(i, j1);
+                Set(i,j1, Get(i, j2));
+                Set(i, j2, value);
+            }
+        }
+
+        #region 重载运算符
+
         public static MatrixN operator +(MatrixN a, MatrixN b)
         {
             MatrixN c = new MatrixN(a.dimension);
@@ -126,6 +158,8 @@ namespace numerical_lib.Basic
             }
             return c;
         }
+
+        #endregion
 
         public override string ToString()
         {
