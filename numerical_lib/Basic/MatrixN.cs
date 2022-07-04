@@ -83,6 +83,48 @@ namespace numerical_lib.Basic
             }
         }
 
+        /// <summary>
+        /// 某一行最大值
+        /// </summary>
+        /// <param name="rowIndex"></param>
+        /// <returns></returns>
+        public int MaxOfRow(int rowIndex)
+        {
+            float max = float.MinValue;
+            int maxColIndex = 0;
+            for (int i = 0; i < dimension; i++)
+            {
+                float value = Get(rowIndex, i);
+                if (value > max)
+                {
+                    maxColIndex = i;
+                    max = value;
+                }
+            }
+            return maxColIndex;
+        }
+        
+        /// <summary>
+        /// 某一列最大值
+        /// </summary>
+        /// <param name="colIndex"></param>
+        /// <returns></returns>
+        public int MaxOfCol(int colIndex)
+        {
+            float max = float.MinValue;
+            int maxRowIndex = 0;
+            for (int i = 0; i < dimension; i++)
+            {
+                float value = Get(i, colIndex);
+                if (value > max)
+                {
+                    maxRowIndex = i;
+                    max = value;
+                }
+            }
+            return maxRowIndex;
+        }
+
         #region 重载运算符
 
         public static MatrixN operator +(MatrixN a, MatrixN b)

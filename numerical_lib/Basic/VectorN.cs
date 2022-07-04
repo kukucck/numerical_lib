@@ -27,6 +27,13 @@
             items[i] = value;
         }
 
+        public void SwapValue(int i, int j)
+        {
+            float tmp = items[i];
+            items[i] = items[j];
+            items[j] = tmp;
+        }
+
         public static VectorN operator *(VectorN a, float b)
         {
             VectorN result = new VectorN(a.items);

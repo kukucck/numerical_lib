@@ -10,7 +10,8 @@ class Program
     
     static void Main(string[] args)
     {
-        TestMatrixMN();
+        TestLuResolver();
+        // TestTridiagonalResolver();
     }
     
     #region 插值测试用例
@@ -117,6 +118,29 @@ class Program
     #endregion
 
     #region 线性方程组直接法
+
+    static void TestLuResolver()
+    {
+        // MatrixN A = new MatrixN(new []
+        // {
+        //     1f, -2f, -1,
+        //     1f, 1f, 2f, 
+        //     1f, -1f, 1f,
+        // });
+        // VectorN b = new VectorN(new []{1f, -1f, -1f});
+        
+        MatrixN A = new MatrixN(new []
+        {
+            1f, 2f, -1, 1,
+            1f, 1f, 2f, -1f,
+            3f, -1f, 1f, 1f,
+            2f, 1f, 3f, -1f
+        });
+        VectorN b = new VectorN(new []{1f, -2f, 6f, -1f});
+
+        VectorN result = LUResolver.Resolve(A, b);
+        Console.WriteLine(result);
+    }
 
     static void TestTridiagonalResolver()
     {
