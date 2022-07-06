@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing.Drawing2D;
 using numerical_lib.Basic;
+using numerical_lib.Integration;
 using numerical_lib.Interpolation;
 using numerical_lib.LinearEquations.DirectMethod;
 using numerical_lib.NonlinearEquations;
@@ -10,7 +11,7 @@ class Program
     
     static void Main(string[] args)
     {
-        TestLuResolver();
+        TestRomberg();
         // TestTridiagonalResolver();
     }
     
@@ -155,6 +156,27 @@ class Program
         TridiagonalResolver resolver = new TridiagonalResolver(A, b);
         VectorN result = resolver.Solve();
         Console.WriteLine(result);
+    }
+
+    #endregion
+
+    #region 数值积分测试
+
+    static void TestRomberg()
+    {
+        float result = 0;
+        int itarNum = 128;
+        float start = 0;
+        float end = 1;
+        int fixedNum = 16;
+        Function f = (float x) =>
+        {
+            float result1 = (float) (Math.Log(1 + x) / (1 + x * x));
+            return result1;
+        };
+        RombergMethod r = new RombergMethod(f);
+        result = r.Resolve(start, end);
+        Console.WriteLine("result = " + result);
     }
 
     #endregion

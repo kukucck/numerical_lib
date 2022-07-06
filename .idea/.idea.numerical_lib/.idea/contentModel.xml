@@ -27,6 +27,9 @@
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Class1.cs" t="Include" />
+        <e p="Integration" t="Include">
+          <e p="RombergMethod.cs" t="Include" />
+        </e>
         <e p="Interpolation" t="Include">
           <e p="HermiteInterpolation.cs" t="Include" />
           <e p="LagrangeInterpolation.cs" t="Include" />
